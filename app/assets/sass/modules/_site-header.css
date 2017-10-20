@@ -19,6 +19,20 @@
 		}
 		
 	}
+
+	&__menu-icon {
+		width: 25px;
+		height: 25px;
+		background-color: #FFF;
+		position: fixed;
+		top:10px;
+		right:10px;
+
+		@mixin atMedium{
+			display: none;
+		}
+		
+	}
 	
 	&__logo {
 		position: absolute;
