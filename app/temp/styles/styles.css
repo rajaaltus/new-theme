@@ -762,6 +762,102 @@ p {
 
 .page-section__section-content p {}
 
+.page-section-white
+ {
+	
+	content: "";
+	
+	clear: both;
+	
+	display: table;
+	background-color: #FFF;
+	color:#1f3652;
+	font-weight: 200;
+	width: 100%;
+
+
+}
+
+.page-section-white .wrapper {
+		padding: 0;
+	}
+
+@media (min-width: 900px) {
+
+.page-section-white .wrapper {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;	
+			-webkit-box-pack: justify;	
+			    -ms-flex-pack: justify;	
+			        justify-content: space-between
+	}
+	}
+
+.page-section-white__section-title {
+
+
+		
+		text-align: center;
+		margin-bottom: -65px;
+	}
+
+.page-section-white__section-title h1 {
+			font-size: 10.9375rem;
+			position: relative;
+			color: rgba(221,226,235, 0.95);
+			margin-top: 40px;
+		}
+
+.page-section-white__section-title h3 {
+			font-size: 1.625rem;
+			position: relative;
+			margin-top: -230px;
+			text-transform: uppercase;
+			font-weight: 300;
+			padding-bottom:35px;
+		}
+
+.page-section-white__section-title h4 {
+			font-size: 2rem;
+			font-weight: 400;
+			padding-bottom: 20px;
+		}
+
+.page-section-white__section-content {
+
+		text-align: center; 
+		-ms-flex-preferred-size: 20%; 
+		    flex-basis: 20%;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		padding: 10px 30px;
+	}
+
+@media (min-width: 900px) {
+
+.page-section-white__section-content {
+			padding:33px 0px
+	}
+	}
+
+.page-section-white__section-content span {
+			width: 269px;
+			height: 279px;
+			display: inline-block;
+		}
+
+.page-section-white__section-content h2{
+			padding-top:20px;
+			text-transform: uppercase;
+			font-size: 0.9375rem;
+			font-weight: 500;
+			padding-bottom:20px;
+			
+		}
+
+.page-section-white__section-content p {}
+
 .featured-blog {
 	background-color: #222;
 	width: 100%;

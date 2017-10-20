@@ -1,0 +1,81 @@
+.page-section-white
+ {
+	
+	@mixin clearfix;
+	background-color: #FFF;
+	color:$primaryColor;
+	font-weight: 200;
+	width: 100%;
+
+
+	.wrapper {
+		padding: 0;
+
+		@mixin atMedium {
+			display: flex;	
+			justify-content: space-between;
+		}
+	}
+	
+
+	&__section-title {
+
+
+		
+		text-align: center;
+		margin-bottom: -65px;
+		h1 {
+			font-size: 10.9375rem;
+			position: relative;
+			color: rgba($primaryText, 0.95);
+			margin-top: 40px;
+		}
+
+		h3 {
+			font-size: 1.625rem;
+			position: relative;
+			margin-top: -230px;
+			text-transform: uppercase;
+			font-weight: 300;
+			padding-bottom:35px;
+		}
+		h4 {
+			font-size: 2rem;
+			font-weight: 400;
+			padding-bottom: 20px;
+		}
+	}
+
+	&__section-content {
+
+		text-align: center; 
+		flex-basis: 20%;
+		flex-wrap: wrap;
+		padding: 10px 30px;
+
+		@mixin atMedium {
+			padding:33px 0px;
+		}
+		
+
+
+		span {
+			width: 269px;
+			height: 279px;
+			display: inline-block;
+		}
+
+
+		h2{
+			padding-top:20px;
+			text-transform: uppercase;
+			font-size: 0.9375rem;
+			font-weight: 500;
+			padding-bottom:20px;
+			
+		}
+		p {}
+	}
+
+
+}
