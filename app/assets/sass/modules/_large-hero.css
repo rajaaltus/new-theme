@@ -1,0 +1,77 @@
+.large-hero {
+
+	width: 100%;
+	height: auto;
+	
+	
+	&__image {
+
+		background-size: cover;
+		width: 100%;
+		display: block;
+
+	}
+
+	&__content {
+		@mixin clearfix;
+		position: absolute;
+		top:35%;
+		transform: translateY(-35%);
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: $primaryText;
+		width: 100%;
+		
+		
+		
+		@mixin atMedium {
+			@mixin clearfix;
+			position: absolute;
+			top:50%;
+			transform: translateY(-50%);
+		}
+
+		
+
+		
+
+		&-heading {
+			font-family: 'Roboto', Sans-serif;
+			text-transform: uppercase;
+			margin-bottom: 0;
+			font-size: 3.5rem;
+			font-weight: 700;
+
+			@mixin atMedium {
+				font-size: 9.5rem;
+				font-weight: 700;
+			}
+		}
+
+		&-subtext {
+			font-size: .4rem;
+			font-weight: 600;
+			letter-spacing: 7.5px;
+			margin-top: 0;
+			color:$navHover;
+			text-transform: uppercase;
+			transform-origin: 100% 100%;
+
+			@mixin atMedium {
+				font-size: 1rem;
+				letter-spacing: 20px;
+			}
+
+		}
+
+		p {
+			font-size: 1rem;
+		}
+
+		.scroll-down {
+			font-size: 4.5rem;
+
+		}
+	}
+}
