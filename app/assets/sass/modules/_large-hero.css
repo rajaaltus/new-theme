@@ -1,12 +1,16 @@
 .large-hero {
 
 	width: 100%;
-	height: auto;
+	height: 100%;
+	
+
+	
 	
 	
 	&__image {
 
 		background-size: cover;
+		background-origin: initial;
 		width: 100%;
 		display: block;
 
@@ -29,6 +33,7 @@
 			@mixin clearfix;
 			position: absolute;
 			top:50%;
+
 			transform: translateY(-50%);
 		}
 

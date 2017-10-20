@@ -4,6 +4,8 @@
 	z-index: 2;
 	width: 100%;
 
+	
+
 
 	@mixin atMedium {
 		border-bottom: 4px solid rgba($navColor, .3);	

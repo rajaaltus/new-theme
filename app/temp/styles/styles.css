@@ -455,6 +455,7 @@ body {
 	color: #dde2eb;
 	background-color: #FFF;
 	font-weight: 200;
+		
 
 }
 
@@ -565,7 +566,7 @@ p {
 	}
 
 .primary-nav {
-
+	overflow: hidden;
 	float: right;
 
 
@@ -599,12 +600,13 @@ p {
 .large-hero {
 
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .large-hero__image {
 
 		background-size: cover;
+		background-origin: initial;
 		width: 100%;
 		display: block;
 
@@ -633,7 +635,9 @@ p {
 			display: table;
 			position: absolute;
 			top:50%;
+
 			-webkit-transform: translateY(-50%);
+
 			        transform: translateY(-50%)
 	}
 	}
