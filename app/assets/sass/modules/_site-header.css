@@ -1,18 +1,14 @@
 .site-header {
-	
+	overflow: hidden;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
-
-	
-
 
 	@mixin atMedium {
 		border-bottom: 4px solid rgba($navColor, .3);	
 		
 	}
 	
-
 	.wrapper {
 
 		@mixin atMedium {

@@ -8,6 +8,7 @@
 
 	.wrapper {
 		padding: 0;
+		display: block;
 
 		@mixin atMedium {
 			display: flex;	
@@ -17,9 +18,6 @@
 	
 
 	&__section-title {
-
-
-		
 		text-align: center;
 		margin-bottom: -65px;
 		h1 {
@@ -40,14 +38,14 @@
 	}
 
 	&__section-content {
-
 		text-align: center; 
-		flex-basis: 20%;
-		flex-wrap: wrap;
+		
 		padding: 10px 30px;
 
 		@mixin atMedium {
 			padding:33px 0px;
+			flex-basis: 20%;
+			flex-wrap: wrap;
 		}
 		
 

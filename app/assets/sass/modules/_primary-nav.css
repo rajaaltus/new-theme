@@ -1,18 +1,16 @@
 .primary-nav {
-	
 	text-align: center;
 	width: 100%;
 	padding: 100px 0px;
 	margin: auto;
+	z-index: 5;
 	
-
-			
 	@mixin atMedium {
 			overflow: hidden;
 			float: right;
 			padding: 0;
-
-		}
+			z-index: 5;
+	}
 
 
 	ul {
@@ -26,37 +24,17 @@
 		padding: 15px 10px;
 		border-bottom: 1px solid rgba($navColor, 0.2);
 
-
-
 		@mixin atMedium {
 			display: inline-block;
 			padding: 50px 24px;
 			border:none;
 		}
-
-
 	}
-
 
 	a {
 		text-decoration: none;
 		color: $navColor;
 		font-size: .85rem;
 		font-weight: 400;
-
-
-		
 	}
-
-	a:hover {
-		border-bottom: 2px solid rgba($navHover, 1);
-		padding-bottom: 14px;
-		@mixin atMedium{
-			padding-bottom: 46px;
-			border-bottom: 5px solid rgba($navHover, 1);		
-		}
-		
-	}
-
-
 }

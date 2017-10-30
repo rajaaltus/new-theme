@@ -9,3 +9,5 @@
 @import "modules/_page-section";
 @import "modules/_page-section-white";
 @import "modules/_featured-blog";
+@import "modules/_reveal-slide";
+@import "modules/_reveal-scale";
