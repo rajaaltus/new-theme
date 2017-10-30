@@ -481,7 +481,7 @@ p {
 	}
 
 .site-header {
-	
+	overflow: hidden;
 	position: absolute;
 	z-index: 2;
 	width: 100%;
@@ -650,13 +650,11 @@ p {
 		}
 
 .primary-nav {
-	
 	text-align: center;
 	width: 100%;
 	padding: 100px 0px;
 	margin: auto;
-
-
+	z-index: 5;
 }
 
 @media (min-width: 900px) {
@@ -664,9 +662,8 @@ p {
 .primary-nav {
 			overflow: hidden;
 			float: right;
-			padding: 0
-
-
+			padding: 0;
+			z-index: 5
 }
 	}
 
@@ -680,8 +677,6 @@ p {
 		display: block;
 		padding: 15px 10px;
 		border-bottom: 1px solid rgba(245,245,245, 0.2);
-
-
 	}
 
 @media (min-width: 900px) {
@@ -690,8 +685,6 @@ p {
 			display: inline-block;
 			padding: 50px 24px;
 			border:none
-
-
 	}
 	}
 
@@ -700,24 +693,6 @@ p {
 		color: #f5f5f5;
 		font-size: .85rem;
 		font-weight: 400;
-
-
-		
-	}
-
-.primary-nav a:hover {
-		border-bottom: 2px solid rgba(17,116,158, 1);
-		padding-bottom: 14px;
-		
-	}
-
-@media (min-width: 900px) {
-
-.primary-nav a:hover {
-			padding-bottom: 46px;
-			border-bottom: 5px solid rgba(17,116,158, 1)
-		
-	}
 	}
 
 .large-hero {
@@ -824,6 +799,7 @@ p {
 
 .page-section .wrapper {
 		padding: 0;
+		display: block;
 	}
 
 @media (min-width: 900px) {
@@ -839,9 +815,6 @@ p {
 	}
 
 .page-section__section-title {
-
-
-		
 		text-align: center;
 		margin-bottom: -65px;
 	}
@@ -863,19 +836,19 @@ p {
 		}
 
 .page-section__section-content {
-
 		text-align: center; 
-		-ms-flex-preferred-size: 20%; 
-		    flex-basis: 20%;
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+		
 		padding: 10px 30px;
 	}
 
 @media (min-width: 900px) {
 
 .page-section__section-content {
-			padding:33px 0px
+			padding:33px 0px;
+			-ms-flex-preferred-size: 20%;
+			    flex-basis: 20%;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap
 	}
 	}
 
@@ -1096,4 +1069,36 @@ p {
 			padding-right: 7%;
 			padding-left: 2%
 	}
+	}
+
+.reveal-slide {
+	opacity:0;	
+	-webkit-transform: translateY(50%);	
+	        transform: translateY(50%);
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	
+}
+
+.reveal-slide--is-visible {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+	}
+
+@media (min-width: 900px) {
+
+.reveal-scale {
+		opacity:0;	
+		-webkit-transform: scale(1.5);	
+		        transform: scale(1.5);
+		-webkit-transition: all .5s ease-out;
+		transition: all .5s ease-out
+}
+	}
+
+.reveal-scale--is-visible {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
